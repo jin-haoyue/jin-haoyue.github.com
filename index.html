@@ -12,25 +12,25 @@
             var mengvalue = -1;
             //if(mengvalue<0){mengvalue=0;}
             var phoneWidth = parseInt(window.screen.width);
-            var phoneScale = phoneWidth / 1000;
+            var phoneScale = phoneWidth / 640;
 
             var ua = navigator.userAgent;
             if (/Android (\d+\.\d+)/.test(ua)) {
                 var version = parseFloat(RegExp.$1);
                 // andriod 2.3
                 if (version > 2.3) {
-                    document.write('<meta name="viewport" content="width=1000, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+                    document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
                     // andriod 2.3以上
                 } else {
-                    document.write('<meta name="viewport" content="width=1000, target-densitydpi=device-dpi">');
+                    document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
                 }
                 // 其他系统
             } else {
-                document.write('<meta name="viewport" content="width=1000, user-scalable=no, target-densitydpi=device-dpi">');
+                document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
             }
         </script>
 		
-		<meta name="viewport" content="width=1000, user-scalable=no, target-densitydpi=device-dpi"><!--移动端版本兼容 end --></head>
+		<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi"><!--移动端版本兼容 end --></head>
 		<body class="s-bg-ddd pc no-3d" style="-webkit-user-select: none;"><!--模版加载提示-->
 		<section class="u-alert"><img style="display:none;" src="images/loading_large.gif">
 		<div class="alert-loading z-move"><div class="cycleWrap"><span class="cycle cycle-1"></span>
